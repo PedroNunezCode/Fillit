@@ -12,7 +12,6 @@
 
 #ifndef FILLIT_H
 # define FILLIT_H
-#include <fcntl.h> 
 
 typedef struct		s_block
 {

@@ -20,13 +20,13 @@ int		main(int argc, char **argv)
 
 	if (argc != 2)
 	{
-		ft_putendl("usage [map]");
+		ft_putstr("usage [map]");
 		return (0);
 	}
 	string = ft_readstring(argv[1]);
 	if (!(ft_check_game(string)))
 	{
-		ft_putstr("error\n");
+		ft_putstr("error");
 		exit(0);
 	}
 	block = ft_stock_block(string);

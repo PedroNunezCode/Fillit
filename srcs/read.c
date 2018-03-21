@@ -12,6 +12,7 @@
 
 #include "../includes/fillit.h"
 #include "../libft/libft.h"
+#include <fcntl.h>
 
 int			ft_count_block(char *str)
 {
@@ -90,7 +91,7 @@ char		*ft_readstring(char *str)
 		i++;
 	if (i >= 546 || i < 20)
 	{
-		ft_putstr_fd("error\n", 1);
+		ft_putstr("error");
 		exit(0);
 	}
 	strr = ft_strnew(i);
