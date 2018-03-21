@@ -12,13 +12,14 @@
 
 #ifndef FILLIT_H
 # define FILLIT_H
+#include <fcntl.h> 
 
 typedef struct		s_block
 {
 	char			c;
 	int				x[4];
 	int				y[4];
-	struct s_tetri	*next;
+	struct s_block	*next;
 }					t_block;
 
 void				ft_xy_block(t_block **block, int x, int y);
